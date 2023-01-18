@@ -1,0 +1,687 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+/* Header Start here */
+#header {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #E3E6F3;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 14px 0px;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #3f3b3b;
+    transition: 0.3s ease;
+}
+#mobile{
+    display: none;
+    align-items: center;
+}
+#close{
+    display: none;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+/* second section main page  */
+#hero {
+    background-image: url("img/123.webp");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0%;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+#hero h4 {
+    font-size: 20px;
+    padding-bottom: 15px;
+
+}
+
+#hero h2 {
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+}
+
+#hero h1 {
+    font-size: 50px;
+    color: #088178;
+    padding-bottom: 15px;
+
+
+}
+
+#hero p {
+    color: #978a8a;
+    font-size: 20px;
+    font-family: 'Padyakke Expanded One', cursive;
+}
+
+#hero button {
+    background-image: url("img/button.png");
+    padding: 17px 83px 14px 65px;
+    border: 0;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 15px;
+    color: #088178;
+
+}
+#hero button:hover{
+    color: white;
+}
+/* <!-- Create the feature page --> */
+.section-p1 {
+    padding: 40px 80px;
+
+}
+
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#feature .fe-box {
+    width: 180px;
+    text-align: center;
+    padding: 15px 18px;
+    border: 1px solid #cce7d0;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin: 16px 0;
+}
+
+#feature .fe-box:hover {
+    box-shadow: 10px 10px 34px rgba(70, 62, 221, 0.1);
+    /* background-color: 	#860909; */
+}
+
+#feature .fe-box img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#feature .fe-box h6 {
+    padding: 10px 10px 10px 10px;
+    display: inline-block;
+    line-height: 1;
+    color: #088178;
+    border: 10px;
+    background-color: #fddde4;
+
+}
+
+#feature .fe-box:nth-child(2) h6 {
+    background-color: #cce7d0;
+}
+
+#feature .fe-box:nth-child(3) h6 {
+    background-color: #d1e8f2;
+}
+
+#feature .fe-box:nth-child(4) h6 {
+    background-color: #cdd4f8;
+}
+
+#feature .fe-box:nth-child(5) h6 {
+    background-color: #f6dbf6;
+}
+
+#feature .fe-box:nth-child(6) h6 {
+    background-color: #fff2e6;
+}
+
+/* Creating the product page  */
+
+#Products1{
+    text-align: center;
+    z-index: 999;
+    
+}
+#Products1 .pro-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 12px;
+    flex-wrap: wrap;
+    
+  
+}
+#Products1 h2 {
+    font-size: 50px;
+}
+#Products1 p {
+    color: #978a8a;
+    padding: 10px 0px 10px 0px;
+}
+#Products1 .pro{
+    width: 23%;
+    min-width:250px;
+    padding: 10px 12px;
+    border: 2px solid #cce7d0;
+    border-radius: 25px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    margin: 15px 0px;
+    transition: 0.2s ease;
+    position: absolute/fixed;
+    position: relative;
+}
+#Products1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.6);
+}
+#Products1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+#Products1 .pro .desc{
+    text-align: start;
+    padding: 10px 0;
+}
+#Products1 .pro .desc span{
+    color: #606063;
+    font-size: 12px;
+}
+#Products1 .pro .desc h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+#Products1 .pro .desc i{
+    font-size: 12px;
+    color: rgb(243,181,25);
+}
+#Products1 .pro .desc h4{
+    padding-top: 7px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #088178;
+}
+#Products1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #e8f6ea ;
+    border-radius: 50px;
+    font-weight: 700;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 13px;
+    right: 10px;
+}
+
+/* Creating the banner page */
+.section-m1 {
+    margin: 40px 0;
+    background-color: #088178;
+}
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("img/banner/b2.jpg");
+    width: 100%;
+    height: 40vh;
+    background-position: center;
+    background-size: cover;
+}
+#banner h4{
+    color: white;
+    font-size: 16px;
+}
+#banner h2{
+    color: white;
+    font-size: 30px;
+    padding: 10px 0;
+}
+#banner h2 span{
+    color: #ef3636;
+}
+
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #1a1a1a;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    border:none;
+    outline:none;
+    transition: 0.2s ease;
+}
+#banner button:hover{
+    background: #088178;
+    color: white;
+
+}
+
+/* creating the next banner here  */
+
+#sm-banner {
+    display: flex ;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("img/banner/b17.jpg");
+    min-width: 580px;
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    padding: 30px;
+}
+#sm-banner .banner-box2{
+    background-image: url("img/banner/b10.jpg");
+}
+#sm-banner h4{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
+#sm-banner h2{
+    color: white;
+    font-size: 29px;
+    font-weight: 800;
+    padding-bottom: 15px;
+}
+#sm-banner span {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 13px;
+}
+
+#sm-banner button{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: white;
+    background-color: transparent;
+    /* border-radius: 4px; */
+    cursor: pointer;
+    border:1px solid white;
+    outline:none;
+    transition: 0.2s ease;
+}
+#sm-banner button:hover{
+    background-color: #088178;
+    border: 1px solid #088178;
+}
+
+#sm-banner .white{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: white;
+    background-color: #088178;
+    /* border-radius: 4px; */
+    cursor: pointer;
+    border:1px solid #088178;
+    outline:none;
+    transition: 0.2s ease;
+}
+#sm-banner .white:hover{
+    background-color: orange;
+    border: 1px solid orange;
+    color:white;
+}
+
+/* creating the text banner here  */
+#banner3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+#banner3 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("img/banner/b7.jpg");
+    min-width: 30%;
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+    padding: 30px;
+    margin-bottom: 20px;
+    color: white;
+}
+#banner3 .banner-box2{
+    background-image: url("img/banner/b4.jpg");
+}
+#banner3 .banner-box3{
+    background-image: url("img/banner/b18.jpg");
+}
+anner here  */
+#banner3 h2{
+    color: white;
+    font-weight: 800;
+    font-size:  22px;
+}
+#banner3 h3{
+    color: #ec544c;
+    font-weight: 800;
+    font-size: 15px;
+}
+/* start the newsletter section here  */
+#newsletter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-image:url("img/banner/b14.png");
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+}
+#newsletter h4{
+    font-size: 22px;
+    font-weight: 800;
+    color: white;
+}
+#newsletter p{
+    font-size: 14px;
+    font-weight: 800;
+    color: #818ea0;
+}
+#newsletter span{
+    color: #ffaa00;
+}
+#newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25rem;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+#newsletter button{
+    background-color: #088178;
+    color: white;
+    white-space: nowrap;
+
+}
+#newsletter .form{
+    display: flex;
+   width: 40%;
+}
+
+/* Design the footer form here */
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+footer .logo{
+    margin-bottom: 30px;
+}
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size: 14px;
+    margin: 0 0 8px 0;
+    color: #606063;
+}
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    margin-bottom: 13px;
+    color: #606063;
+}
+footer .follow{
+    margin-top: 20px;
+}
+footer .follow i{
+    
+    cursor: pointer;
+    padding: 0 10px;
+    
+}
+footer .follow i:hover,
+footer a:hover,
+footer .copyright p:hover{
+    color: #088178;
+    cursor: pointer;
+    border-radius:50%;
+    font-weight: 500;
+    font-size: 20px;
+    /* background-color: rebeccapurple; */
+    transform: rotate(360);
+}
+footer .install .row img{
+    border: 1px solid #088178;
+    border-radius: 6px;
+}
+footer .install img{
+    margin: 10px 0 15px 0;
+}
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 799px){
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s ease ;
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li{
+        margin-bottom: 25px;
+    }
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+    #mobile i{
+        font-size: 24px;
+        color: #041e42;
+        padding-left: 20px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #041e42;
+        font-size: 24px;
+    }
+    #navbar #lg-bag{
+        display: none;
+    }
+    /* edit hero section from here  */
+    #hero {
+      
+        height: 70vh;
+        background-position: top 30% left 30%;
+        padding: 0 80px;
+        padding: 0 0 0 15px;
+
+    }
+    /* edit the feature section from here  */
+    #feature {
+        justify-content: center;
+    }
+    #feature .fe-box {
+        margin: 16px 15px;
+    }
+    .section-p1 {
+        padding: 40px 40px;
+    }
+    #Products1 .pro-container {
+
+        justify-content: center;
+    }
+    #Products1 .pro {
+        margin: 15px;
+    }
+    #banner {
+        height: 20vh;
+    }
+    #sm-banner .banner-box {
+
+        min-width: 100%;
+        height: 30vh;
+        margin-bottom: 10px;
+    }
+    #banner3 {
+
+        padding: 0 40px;
+    }
+    #banner3 .banner-box {
+
+        width: 27%;
+
+    }
+}
+@media (max-width:477px) {
+    #header {
+
+        padding: 20px 40px;
+    } 
+    #hero {
+        background-position: 45%;
+        padding: 0 80px;
+        padding: 0 0 0 15px;
+    }
+    #hero h2 {
+        font-size: 30px;
+
+    }
+    #hero h1 {
+        font-size: 30px;
+    }
+    #hero p {
+
+        font-size: 15px;
+ 
+    }
+    .section-p1 {
+        padding: 10px 10px;
+    }
+    #feature .fe-box {
+        width: 155px;
+        text-align: center;
+        margin: 16px 0;
+    }
+    #feature {
+        justify-content: space-between;
+    }
+    #Products1 h2 {
+        font-size: 30px;
+    }
+    #Products1 .pro {
+        width: 100%;
+
+    }
+    #banner {
+
+        height: 40vh;
+
+    }
+    #banner3 .banner-box {
+    width: 100%;
+}
+#banner3 {
+    padding: 0 20px;
+}
+#newsletter {
+  padding: 0 12px;
+    height: 20vh;
+}
+#newsletter .form {
+    display: flex;
+    width: 100%;
+}
+
+}
